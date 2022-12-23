@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes jump {
+            0% {transform: translateY(0px) scale(1, 1)}
+            /* 45% {transform: translateY(350px) scale(0.75, 1.25);} */
+            50% {transform: translateY(400px) scale(1.25, 0.75);}
+            55% {transform: translateY(350px) scale(0.75, 1.25);}
+            100% {transform: translateY(0px) scale(1, 1);} 
+        }
+
+        .ball {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: red;
+            animation: jump 1s infinite;
+        }
+        body {
+            min-height: 475px;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgb(193, 225, 241), rgb(36, 226, 226));
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
